@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.mybtn{
+  padding: 6px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#mytodosList{
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+#mytodosList .todo{
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: #1a1a1a;
+  padding: 5px;
+  cursor: pointer;
+}
+#TodoForm{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 2px solid black;
+}
+
+#TodoForm > input{
+  width: inherit;
+  height: inherit;
+  padding: 6px 8px;
+  background-color: #1a1a1a;
+  outline: none;
+  border: none;
+}
+#TodoForm > .mybtn[data-btn='add']{
+  background-color: #0247a1;
+}
+#TodoWrapper{
+  margin-top: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.todo>div{
+  display: flex;
+  gap: 8px;
+}
+.todo .mybtn[data-btn='edit']{
+  background-color: green;
+}
+.todo .mybtn[data-btn='delete']{
+  background-color: red;
+}
